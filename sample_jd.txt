@@ -1,0 +1,30 @@
+We are seeking a Senior Backend Engineer with expertise in Python and distributed systems to join our rapidly growing engineering team. 
+
+Key Responsibilities:
+- Design and implement scalable backend services using Python and FastAPI
+- Build and maintain high-performance APIs that serve millions of users
+- Collaborate with frontend engineers, product managers, and designers
+- Optimize application performance and ensure system reliability
+- Participate in code reviews and technical architecture discussions
+
+Requirements:
+- 5+ years of professional software development experience
+- Expertise in Python and at least one web framework (FastAPI, Django, Flask)
+- Strong experience with PostgreSQL or similar relational databases
+- Proficiency with AWS or other cloud platforms
+- Experience with Docker and container orchestration (Kubernetes preferred)
+- Understanding of microservices architecture and RESTful APIs
+- BS/MS in Computer Science or equivalent experience
+
+Nice to Have:
+- Experience with Redis, MongoDB, or other NoSQL databases
+- Knowledge of message queues (RabbitMQ, Kafka)
+- Familiarity with CI/CD pipelines and automated testing
+- Experience with monitoring and observability tools
+
+Benefits:
+- Competitive salary and equity package
+- Unlimited PTO and flexible work arrangements
+- Health, dental, and vision insurance
+- Professional development budget
+- Remote work friendly

@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-50 text-gray-900;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary-600 hover:bg-primary-700 text-white font-medium py-2 px-4 rounded-xl transition duration-200 ease-in-out transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary-600 hover:bg-secondary-700 text-white font-medium py-2 px-4 rounded-xl transition duration-200 ease-in-out transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-secondary-500;
+  }
+  
+  .btn-accent {
+    @apply bg-accent-600 hover:bg-accent-700 text-white font-medium py-2 px-4 rounded-xl transition duration-200 ease-in-out transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent-500;
+  }
+  
+  .btn-outline {
+    @apply border border-gray-300 hover:border-gray-400 text-gray-700 hover:text-gray-900 font-medium py-2 px-4 rounded-xl transition duration-200 ease-in-out;
+  }
+  
+  .score-badge {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-medium;
+  }
+  
+  .score-badge-match {
+    @apply bg-blue-100 text-blue-800;
+  }
+  
+  .score-badge-interest {
+    @apply bg-green-100 text-green-800;
+  }
+  
+  .score-badge-final {
+    @apply bg-purple-100 text-purple-800;
+  }
+  
+  .card {
+    @apply bg-white rounded-xl shadow-card overflow-hidden transition-all duration-300 ease-in-out;
+  }
+  
+  .card:hover {
+    @apply shadow-card-hover;
+  }
+  
+  .input-field {
+    @apply block w-full px-4 py-3 border border-gray-300 rounded-xl text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500;
+  }
+}
+
+@layer utilities {
+  .transition-all {
+    transition-property: all;
+  }
+}

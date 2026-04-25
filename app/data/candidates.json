@@ -1,0 +1,262 @@
+[
+  {
+    "id": "1",
+    "name": "Alex Johnson",
+    "skills": ["Python", "Django", "PostgreSQL", "AWS", "Docker"],
+    "years_of_experience": 7,
+    "domain": "Tech",
+    "past_roles": ["Backend Developer", "Senior Software Engineer"],
+    "activity_signals": {
+      "open_to_work": true,
+      "recently_applied": false,
+      "profile_updated": true
+    }
+  },
+  {
+    "id": "2",
+    "name": "Maria Garcia",
+    "skills": ["JavaScript", "React", "Node.js", "MongoDB", "GraphQL"],
+    "years_of_experience": 5,
+    "domain": "Tech",
+    "past_roles": ["Frontend Developer", "Full Stack Engineer"],
+    "activity_signals": {
+      "open_to_work": false,
+      "recently_applied": true,
+      "profile_updated": true
+    }
+  },
+  {
+    "id": "3",
+    "name": "David Chen",
+    "skills": ["Java", "Spring Boot", "Kubernetes", "Microservices", "Oracle"],
+    "years_of_experience": 10,
+    "domain": "Finance",
+    "past_roles": ["Software Architect", "Technical Lead"],
+    "activity_signals": {
+      "open_to_work": false,
+      "recently_applied": false,
+      "profile_updated": false
+    }
+  },
+  {
+    "id": "4",
+    "name": "Sarah Williams",
+    "skills": ["Python", "Machine Learning", "TensorFlow", "Data Science", "SQL"],
+    "years_of_experience": 6,
+    "domain": "Data Science",
+    "past_roles": ["Data Scientist", "ML Engineer"],
+    "activity_signals": {
+      "open_to_work": true,
+      "recently_applied": false,
+      "profile_updated": true
+    }
+  },
+  {
+    "id": "5",
+    "name": "James Brown",
+    "skills": ["React", "Vue.js", "Angular", "TypeScript", "CSS"],
+    "years_of_experience": 4,
+    "domain": "Tech",
+    "past_roles": ["Frontend Developer", "UI Engineer"],
+    "activity_signals": {
+      "open_to_work": true,
+      "recently_applied": true,
+      "profile_updated": false
+    }
+  },
+  {
+    "id": "6",
+    "name": "Emily Davis",
+    "skills": ["Python", "FastAPI", "Redis", "PostgreSQL", "Docker"],
+    "years_of_experience": 3,
+    "domain": "Tech",
+    "past_roles": ["Junior Developer", "Software Engineer"],
+    "activity_signals": {
+      "open_to_work": true,
+      "recently_applied": false,
+      "profile_updated": true
+    }
+  },
+  {
+    "id": "7",
+    "name": "Michael Wilson",
+    "skills": ["C#", ".NET", "Azure", "SQL Server", "Microservices"],
+    "years_of_experience": 8,
+    "domain": "Enterprise",
+    "past_roles": ["Senior Developer", "Team Lead"],
+    "activity_signals": {
+      "open_to_work": false,
+      "recently_applied": false,
+      "profile_updated": false
+    }
+  },
+  {
+    "id": "8",
+    "name": "Jennifer Lee",
+    "skills": ["JavaScript", "React Native", "Mobile Development", "Firebase", "Redux"],
+    "years_of_experience": 5,
+    "domain": "Mobile",
+    "past_roles": ["Mobile Developer", "App Developer"],
+    "activity_signals": {
+      "open_to_work": true,
+      "recently_applied": false,
+      "profile_updated": true
+    }
+  },
+  {
+    "id": "9",
+    "name": "Robert Taylor",
+    "skills": ["Go", "Kubernetes", "Docker", "Cloud Architecture", "AWS"],
+    "years_of_experience": 9,
+    "domain": "Cloud",
+    "past_roles": ["DevOps Engineer", "Cloud Architect"],
+    "activity_signals": {
+      "open_to_work": false,
+      "recently_applied": true,
+      "profile_updated": false
+    }
+  },
+  {
+    "id": "10",
+    "name": "Lisa Anderson",
+    "skills": ["Python", "Django", "Flask", "REST APIs", "PostgreSQL"],
+    "years_of_experience": 4,
+    "domain": "Tech",
+    "past_roles": ["Backend Developer", "API Developer"],
+    "activity_signals": {
+      "open_to_work": true,
+      "recently_applied": false,
+      "profile_updated": true
+    }
+  },
+  {
+    "id": "11",
+    "name": "Thomas Martinez",
+    "skills": ["Java", "Spring", "Hibernate", "MySQL", "Microservices"],
+    "years_of_experience": 6,
+    "domain": "Enterprise",
+    "past_roles": ["Software Engineer", "Senior Developer"],
+    "activity_signals": {
+      "open_to_work": false,
+      "recently_applied": false,
+      "profile_updated": false
+    }
+  },
+  {
+    "id": "12",
+    "name": "Amanda Thompson",
+    "skills": ["UI/UX Design", "Figma", "Adobe Creative Suite", "Prototyping", "User Research"],
+    "years_of_experience": 5,
+    "domain": "Design",
+    "past_roles": ["UI Designer", "Product Designer"],
+    "activity_signals": {
+      "open_to_work": true,
+      "recently_applied": false,
+      "profile_updated": true
+    }
+  },
+  {
+    "id": "13",
+    "name": "Christopher Moore",
+    "skills": ["Python", "Data Engineering", "Apache Spark", "Airflow", "AWS"],
+    "years_of_experience": 7,
+    "domain": "Data Engineering",
+    "past_roles": ["Data Engineer", "ETL Developer"],
+    "activity_signals": {
+      "open_to_work": true,
+      "recently_applied": false,
+      "profile_updated": true
+    }
+  },
+  {
+    "id": "14",
+    "name": "Jessica Jackson",
+    "skills": ["Cybersecurity", "Penetration Testing", "SIEM", "CISSP", "Network Security"],
+    "years_of_experience": 8,
+    "domain": "Security",
+    "past_roles": ["Security Analyst", "Security Engineer"],
+    "activity_signals": {
+      "open_to_work": false,
+      "recently_applied": true,
+      "profile_updated": false
+    }
+  },
+  {
+    "id": "15",
+    "name": "Daniel White",
+    "skills": ["Blockchain", "Solidity", "Ethereum", "Smart Contracts", "Web3"],
+    "years_of_experience": 4,
+    "domain": "Blockchain",
+    "past_roles": ["Blockchain Developer", "Smart Contract Developer"],
+    "activity_signals": {
+      "open_to_work": true,
+      "recently_applied": false,
+      "profile_updated": true
+    }
+  },
+  {
+    "id": "16",
+    "name": "Ashley Harris",
+    "skills": ["DevOps", "CI/CD", "Jenkins", "Ansible", "Terraform"],
+    "years_of_experience": 6,
+    "domain": "DevOps",
+    "past_roles": ["DevOps Engineer", "Automation Engineer"],
+    "activity_signals": {
+      "open_to_work": true,
+      "recently_applied": false,
+      "profile_updated": true
+    }
+  },
+  {
+    "id": "17",
+    "name": "Matthew Clark",
+    "skills": ["iOS", "Swift", "Objective-C", "Xcode", "CocoaPods"],
+    "years_of_experience": 5,
+    "domain": "Mobile",
+    "past_roles": ["iOS Developer", "Mobile App Developer"],
+    "activity_signals": {
+      "open_to_work": false,
+      "recently_applied": false,
+      "profile_updated": false
+    }
+  },
+  {
+    "id": "18",
+    "name": "Samantha Lewis",
+    "skills": ["Android", "Kotlin", "Java", "Firebase", "RxJava"],
+    "years_of_experience": 4,
+    "domain": "Mobile",
+    "past_roles": ["Android Developer", "Mobile Developer"],
+    "activity_signals": {
+      "open_to_work": true,
+      "recently_applied": true,
+      "profile_updated": true
+    }
+  },
+  {
+    "id": "19",
+    "name": "Andrew Walker",
+    "skills": ["Rust", "Systems Programming", "Performance Optimization", "Concurrency", "Low-level Programming"],
+    "years_of_experience": 7,
+    "domain": "Systems",
+    "past_roles": ["Systems Programmer", "Performance Engineer"],
+    "activity_signals": {
+      "open_to_work": true,
+      "recently_applied": false,
+      "profile_updated": true
+    }
+  },
+  {
+    "id": "20",
+    "name": "Olivia Hall",
+    "skills": ["Salesforce", "CRM", "APEX", "Visualforce", "Lightning"],
+    "years_of_experience": 6,
+    "domain": "Enterprise",
+    "past_roles": ["Salesforce Developer", "CRM Specialist"],
+    "activity_signals": {
+      "open_to_work": false,
+      "recently_applied": true,
+      "profile_updated": false
+    }
+  }
+]
