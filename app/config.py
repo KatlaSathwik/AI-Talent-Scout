@@ -16,6 +16,7 @@ class Settings(BaseSettings):
 
     # Model settings
     MODEL_NAME: str = "gemini-3-flash"
+    EMBEDDING_BACKEND: str = "hash"
     EMBEDDING_MODEL: str = "all-MiniLM-L6-v2"
 
     # Application settings

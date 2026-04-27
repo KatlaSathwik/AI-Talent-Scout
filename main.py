@@ -1,11 +1,11 @@
 """
 Main FastAPI application for the AI-Powered Talent Scouting Agent.
 """
+from functools import lru_cache
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-from typing import List
-import os
+from typing import TypedDict
 
 from app.agents.jd_parser import JDParser
 from app.agents.matcher import CandidateMatcher
@@ -31,12 +31,29 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Initialize services
-candidate_service = CandidateService()
-jd_parser = JDParser()
-matcher = CandidateMatcher()
-scorer = CandidateScorer()
-outreach_agent = OutreachAgent()
+
+class Services(TypedDict):
+    candidate_service: CandidateService
+    jd_parser: JDParser
+    matcher: CandidateMatcher
+    scorer: CandidateScorer
+    outreach_agent: OutreachAgent
+
+
+@lru_cache(maxsize=1)
+def get_services() -> Services:
+    """Lazily initialize heavy services on first analyze request.
+
+    This avoids startup-time memory spikes on small instances (e.g. Render free tier)
+    so the web process can bind to PORT quickly.
+    """
+    return {
+        "candidate_service": CandidateService(),
+        "jd_parser": JDParser(),
+        "matcher": CandidateMatcher(),
+        "scorer": CandidateScorer(),
+        "outreach_agent": OutreachAgent(),
+    }
 
 
 class JobDescriptionRequest(BaseModel):
@@ -54,24 +71,26 @@ async def analyze_job_description(request: JobDescriptionRequest):
     Returns:
         Ranked list of candidates with match and interest scores
     """
+    services = get_services()
+
     # Parse job description
-    parsed_jd = jd_parser.parse(request.job_description)
+    parsed_jd = services["jd_parser"].parse(request.job_description)
     
     # Find matching candidates
-    matched_candidates = matcher.find_matches(parsed_jd)
+    matched_candidates = services["matcher"].find_matches(parsed_jd)
     
     # Score candidates
-    scored_candidates = scorer.score_candidates(matched_candidates, parsed_jd)
+    scored_candidates = services["scorer"].score_candidates(matched_candidates, parsed_jd)
     
     # Simulate outreach and get interest scores
     final_candidates = []
     for match_result in scored_candidates:
         # Get the actual candidate object
-        candidate = candidate_service.get_candidate_by_id(match_result.candidate_id)
+        candidate = services["candidate_service"].get_candidate_by_id(match_result.candidate_id)
         
         # In a real implementation, we would simulate outreach here
         # For now, we'll use a placeholder interest assessment
-        interest_assessment = outreach_agent.assess_interest(candidate, parsed_jd)
+        interest_assessment = services["outreach_agent"].assess_interest(candidate, parsed_jd)
         
         # Combine scores
         final_score = 0.6 * match_result.match_score + 0.4 * interest_assessment.interest_score
@@ -96,6 +115,12 @@ async def analyze_job_description(request: JobDescriptionRequest):
 async def health_check():
     """Health check endpoint."""
     return {"status": "healthy"}
+
+
+@app.get("/")
+async def root():
+    """Root endpoint for platform health checks."""
+    return {"service": "ai-talent-scout", "status": "ok"}
 
 
 if __name__ == "__main__":
